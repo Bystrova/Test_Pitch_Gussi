@@ -2,6 +2,11 @@
 	display: grid;
 	grid-template-rows: min-content 1fr;
 	position: relative;
+
+	@media (min-width: $desktop-width) {
+		position: sticky;
+		top: 0;
+	}
 }
 
 .slider__list {
@@ -26,13 +31,17 @@
 }
 
 .slider__text {
-	padding: 0 16px 20px;
+	padding: 0 16px 28px;
 	color: $basic-white;
 	background: linear-gradient(to top, $basic-opacity-grey, transparent);
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 8px;
+	bottom: 0;
+
+	@media (min-width: $desktop-width) {
+		padding: 0 0 32px 52px;
+	}
 }
 
 .slider__item-name {
@@ -44,6 +53,11 @@
 	@media (min-width: $tablet-width) {
 		font-size: 64px;
 		line-height: 64px;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 72px;
+		line-height: 72px;
 	}
 }
 
@@ -58,6 +72,10 @@
 		font-size: 24px;
 		line-height: 32px;
 		font-weight: normal;
+	}
+
+	@media (min-width: $desktop-width) {
+		font-size: 28px;
 	}
 }
 
@@ -75,6 +93,7 @@
 	grid-row: 1/-1;
 	grid-column: 1/-1;
 	z-index: -1;
+	display: block;
 
 	@media (min-width: $tablet-width) {
 		width: 720px;
@@ -95,6 +114,11 @@
 	position: absolute;
 	left: 11px;
 	bottom: 25px;
+
+	@media (min-width: $desktop-width) {
+		left: 42px;
+		bottom: 30px;
+	}
 }
 
 .slider__button {

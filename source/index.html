@@ -11,244 +11,248 @@
 
 <body>
 	<main class="main">
-		<div class="center center--slider">
-			<section class="slider">
-				<a class="main-logo main-logo--slider" href="#">
-					<img class="main-logo__img" src="images/logo/logo.svg" width="65" height="36" alt="Logotype Gussi">
-				</a>
-				<ul class="slider__list">
-					<li class="slider__item slider__item--current">
-						<div class="slider__text">
-							<p class="slider__item-name">Light coat</p>
-							<p class="slider__slogan">More cotton, more freedom</p>
-							<p class="slider__counter">01<span class="slider__counter-total"> &mdash; 03</span></p>
-						</div>
-						<picture>
-							<source media="(min-width: 1360px)" srcset="images/photos/photo-1-desktop.jpg">
-							<source media="(min-width: 720px)" srcset="images/photos/photo-1-tablet.jpg">
-							<img class="slider__img" src="images/photos/photo-1.jpg" width="320" height="600" alt="Jacket with belt">
-						</picture>
-					</li>
-					<li class="slider__item ">
-						<div class="slider__text">
-							<p class="slider__item-name">Sandy longsleeve</p>
-							<p class="slider__slogan">More cotton, more freedom</p>
-							<p class="slider__counter">02<span class="slider__counter-total"> &mdash; 03</span></p>
-						</div>
-						<picture>
-							<source media="(min-width: 1360px)" srcset="images/photos/photo-2-desktop.jpg">
-							<source media="(min-width: 720px)" srcset="images/photos/photo-2-tablet.jpg">
-							<img class="slider__img" src="images/photos/photo-2.jpg" width="320" height="600" alt="Longsleeve">
-						</picture>
-					</li>
-					<li class="slider__item">
-						<div class="slider__text">
-							<p class="slider__item-name">Lime jacket</p>
-							<p class="slider__slogan">More cotton, more freedom</p>
-							<p class="slider__counter">03<span class="slider__counter-total"> &mdash; 03</span></p>
-						</div>
-						<picture>
-							<source media="(min-width: 1360px)" srcset="images/photos/photo-3-desktop.jpg">
-							<source media="(min-width: 720px)" srcset="images/photos/photo-3-tablet.jpg">
-							<img class="slider__img" src="images/photos/photo-3.jpg" width="320" height="600" alt="Jacket">
-						</picture>
-					</li>
-				</ul>
-				<ul class="slider__buttons">
-					<li>
-						<button class="slider__button slider__button--prev" type="button">
-							<span class="visually-hidden">Previous</span>
-						</button>
-					</li>
-					<li>
-						<button class="slider__button slider__button--next" type="button">
-							<span class="visually-hidden">Next</span>
-						</button>
-					</li>
-				</ul>
-			</section>
-		</div>
-		<div class="center">
-			<form class="form" method="post" action="#">
-				<div class="form__top">
-					<span class="title">New collection</span>
-					<h1 class="form__heading">Gussi light coat </h1>
-					<input type="hidden" value="Light coat" name="title">
-					<p class="form__description">It takes you from the party to the after party
-						with its fashion-forward styles. A&nbsp;playfull blend
-						of retro and modern outdoor design.</p>
-				</div>
-				<div class="form__wrap">
-					<fieldset class="form__fieldset">
-						<legend class="title">Colour</legend>
-						<ul class="form__input-list">
-							<li class="form__input-item form__input-item--color">
-								<input class="form__input" type="radio" name="color" id="dark-blue" value="dark-blue" checked>
-								<label class="form__label form__label--color" for="dark-blue">
-									<span class="visually-hidden">Dark-blue color</span>
-								</label>
-							</li>
-							<li class="form__input-item form__input-item--color">
-								<input class="form__input" type="radio" name="color" id="grey" value="grey">
-								<label class="form__label form__label--grey form__label--color" for="grey">
-									<span class="visually-hidden">Grey color</span>
-								</label>
-							</li>
-							<li class="form__input-item form__input-item--color">
-								<input class="form__input" type="radio" name="color" id="blue" value="blue">
-								<label class="form__label form__label--blue form__label--color" for="blue">
-									<span class="visually-hidden">Blue color</span>
-								</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="form__fieldset form__fieldset--size">
-						<legend class="title">Size</legend>
-						<ul class="form__input-list form__input-list--size">
-							<li class="form__input-item form__input-item--size">
-								<input class="form__input" type="radio" name="size" id="xs" value="xs">
-								<label class="form__label form__label--size" for="xs"> xs </label>
-							</li>
-							<li class="form__input-item form__input-item--size">
-								<input class="form__input" type="radio" name="size" id="s" value="s" checked>
-								<label class="form__label form__label--size" for="s"> s </label>
-							</li>
-							<li class="form__input-item form__input-item--size">
-								<input class="form__input" type="radio" name="size" id="m" value="m">
-								<label class="form__label form__label--size" for="m"> m </label>
-							</li>
-							<li class="form__input-item form__input-item--size">
-								<input class="form__input" type="radio" name="size" id="l" value="l">
-								<label class="form__label form__label--size" for="l"> l </label>
-							</li>
-							<li class="form__input-item form__input-item--size">
-								<input class="form__input" type="radio" name="size" id="xl" value="xl" disabled>
-								<label class="form__label form__label--size" for="xl"> xl </label>
-							</li>
-						</ul>
-						<a class="form__size-guide" href="#">Size guide</a>
-					</fieldset>
-					<div class="form__container">
-						<span class="title">Quantity</span>
-						<div class="form__input-wrap">
-							<button class="control-button control-button--decrease" type="button">
-								<span class="visually-hidden">Decrease</span>
-							</button>
-							<input class="form__input form__input--quantity" type="number" name="quantity" id="quantity" value="1">
-							<label class="visually-hidden" for="quantity">Number of units</label>
-							<button class="control-button control-button--increase" type="button">
-								<span class="visually-hidden">Increase</span>
-							</button>
-						</div>
-					</div>
-					<div>
-						<span class="title">Cost</span>
-						<span class="form__cost-integer">$120</span><span class="form__cost-float">.00</span>
-						<input class="form__input form__input--cost" type="hidden" value="120.00" id="cost" name="cost">
-					</div>
-				</div>
-				<div class="form__bottom">
-					<h3 class="title">Product details</h3>
-					<p class="form__details">Look out for its standout party dresses, feminine details, statement jackets and cool
-						denim including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear and
-						swimwear ranges.</p>
-					<span class="form__note">63% Viscose, 37% Polyamide.</span>
-				</div>
-				<button class="button" type="submit">Order now</button>
-			</form>
-			<section class="service">
-				<ul class="service__list">
-					<li class="service__item">
-						<button class="service__button service__button--increase section-heading" type="button">Delivery
-							<span class="visually-hidden">Open</span>
-						</button>
-						<p class="service__description">Delivered on or before Monday, 25 February 2019
-							Note: Subject to placing your order before specific cut-off times. Details available in checkout.
-							<span class="service__note">For free delivery – spend over <b>£18.08</b></span>
-						</p>
-					</li>
-					<li class="service__item">
-						<button class="service__button service__button--increase section-heading" type="button">Return
-							<span class="visually-hidden">Open</span>
-						</button>
-						<p class="service__description">Return through your local Boxberry store available in over 2,300 locations.
-							You can create your return on the carrier website by clicking the create return link.
-							Open 7 days a week, early until late.
-						</p>
-					</li>
-				</ul>
-			</section>
-			<section class="similar">
-				<h3 class="title">Similar Collections</h3>
-				<ul class="similar__list">
-					<li class="similar__item">
-						<a class="similar__link" href="#">
-							<div class="similar__text">
-								<span class="similar__heading">Kingsman style</span>
-								<span class="similar__slogan">More silk, more freedom</span>
+		<div class="center center--main">
+			<div class="center center--slider">
+				<section class="slider">
+					<a class="main-logo main-logo--slider" href="#">
+						<img class="main-logo__img" src="images/logo/logo.svg" width="65" height="36" alt="Logotype Gussi">
+					</a>
+					<ul class="slider__list">
+						<li class="slider__item slider__item--current">
+							<div class="slider__text">
+								<p class="slider__item-name">Light coat</p>
+								<p class="slider__slogan">More cotton, more freedom</p>
+								<p class="slider__counter">01<span class="slider__counter-total"> &mdash; 03</span></p>
 							</div>
 							<picture>
-								<source media="(min-width: 1360px)" srcset="images/photos/photo-4-desktop.jpg">
-								<source media="(min-width: 720px)" srcset="images/photos/photo-4-tablet.jpg">
-								<img class="similar__img" src="images/photos/photo-4.jpg" width="288" height="160"
-									alt="Kingsman style collection">
+								<source media="(min-width: 1360px)" srcset="images/photos/photo-1-desktop.jpg">
+								<source media="(min-width: 720px)" srcset="images/photos/photo-1-tablet.jpg">
+								<img class="slider__img" src="images/photos/photo-1.jpg" width="320" height="600"
+									alt="Jacket with belt">
 							</picture>
-						</a>
-					</li>
-					<li class="similar__item">
-						<a class="similar__link" href="#">
-							<div class="similar__text">
-								<span class="similar__heading">Denim goddess</span>
-								<span class="similar__slogan">More denim, more freedom</span>
+						</li>
+						<li class="slider__item ">
+							<div class="slider__text">
+								<p class="slider__item-name">Sandy longsleeve</p>
+								<p class="slider__slogan">More cotton, more freedom</p>
+								<p class="slider__counter">02<span class="slider__counter-total"> &mdash; 03</span></p>
 							</div>
 							<picture>
-								<source media="(min-width: 1360px)" srcset="images/photos/photo-5-desktop.jpg">
-								<source media="(min-width: 720px)" srcset="images/photos/photo-5-tablet.jpg">
-								<img class="similar__img" src="images/photos/photo-5.jpg" width="288" height="160"
-									alt="Denim goddess collection">
+								<source media="(min-width: 1360px)" srcset="images/photos/photo-2-desktop.jpg">
+								<source media="(min-width: 720px)" srcset="images/photos/photo-2-tablet.jpg">
+								<img class="slider__img" src="images/photos/photo-2.jpg" width="320" height="600" alt="Longsleeve">
 							</picture>
-						</a>
-					</li>
-				</ul>
-			</section>
-			<section class="subscribe">
-				<h2 class="section-heading section-heading--subscribe">Subscribe our newsletter</h2>
-				<p class="subscribe__text">Get notified about new collections
-					of Gussi Store</p>
-				<form class="subscribe__form" method="post" action="#">
-					<fieldset class="subscribe__fieldset">
-						<ul class="subscribe__input-list">
-							<li class="subscribe__input-item">
-								<input class="subscribe__input" type="text" name="user-name" id="user-name"
-									placeholder="Enter your name">
-								<label class="visually-hidden" for="user-name">Enter your name</label>
-							</li>
-							<li class="subscribe__input-item">
-								<input class="subscribe__input" type="text" name="user-email" id="user-email"
-									placeholder="Enter your e-mail">
-								<label class="visually-hidden" for="user-email">Enter your email</label>
-							</li>
-						</ul>
-					</fieldset>
-					<fieldset class="subscribe__fieldset subscribe__fieldset-gender">
-						<span class="subscribe__legend">Choose your gender:</span>
-						<ul class="subscribe__input-list subscribe__input-list--flex">
-							<li class="subscribe__input-item">
-								<input class="subscribe__radio" type="radio" name="gender" id="male" value="male" checked>
-								<label class="subscribe__label" for="male">Male</label>
-							</li>
-							<li class="subscribe__input-item">
-								<input class="subscribe__radio" type="radio" name="gender" id="female" value="female">
-								<label class="subscribe__label" for="female">Female</label>
-							</li>
-						</ul>
-					</fieldset>
-					<input class="subscribe__checkbox" type="checkbox" name="agreement" id="agreement" checked>
-					<label class="subscribe__checkbox-label" for="agreement">Look out for its standout party dresses,
-						feminine details</label>
-					<button class="button">Subscribe Gussi</button>
+						</li>
+						<li class="slider__item">
+							<div class="slider__text">
+								<p class="slider__item-name">Lime jacket</p>
+								<p class="slider__slogan">More cotton, more freedom</p>
+								<p class="slider__counter">03<span class="slider__counter-total"> &mdash; 03</span></p>
+							</div>
+							<picture>
+								<source media="(min-width: 1360px)" srcset="images/photos/photo-3-desktop.jpg">
+								<source media="(min-width: 720px)" srcset="images/photos/photo-3-tablet.jpg">
+								<img class="slider__img" src="images/photos/photo-3.jpg" width="320" height="600" alt="Jacket">
+							</picture>
+						</li>
+					</ul>
+					<ul class="slider__buttons">
+						<li>
+							<button class="slider__button slider__button--prev" type="button">
+								<span class="visually-hidden">Previous</span>
+							</button>
+						</li>
+						<li>
+							<button class="slider__button slider__button--next" type="button">
+								<span class="visually-hidden">Next</span>
+							</button>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="center">
+				<form class="form" method="post" action="#">
+					<div class="form__top">
+						<span class="title">New collection</span>
+						<h1 class="form__heading">Gussi light coat </h1>
+						<input type="hidden" value="Light coat" name="title">
+						<p class="form__description">It takes you from the party to the after party
+							with its fashion-forward styles. A&nbsp;playfull blend
+							of retro and modern outdoor design.</p>
+					</div>
+					<div class="form__wrap">
+						<fieldset class="form__fieldset">
+							<legend class="title">Colour</legend>
+							<ul class="form__input-list">
+								<li class="form__input-item">
+									<input class="form__input" type="radio" name="color" id="dark-blue" value="dark-blue" checked>
+									<label class="form__label form__label--color" for="dark-blue">
+										<span class="visually-hidden">Dark-blue color</span>
+									</label>
+								</li>
+								<li class="form__input-item">
+									<input class="form__input" type="radio" name="color" id="grey" value="grey">
+									<label class="form__label form__label--grey form__label--color" for="grey">
+										<span class="visually-hidden">Grey color</span>
+									</label>
+								</li>
+								<li class="form__input-item">
+									<input class="form__input" type="radio" name="color" id="blue" value="blue">
+									<label class="form__label form__label--blue form__label--color" for="blue">
+										<span class="visually-hidden">Blue color</span>
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="form__fieldset form__fieldset--size">
+							<legend class="title">Size</legend>
+							<ul class="form__input-list form__input-list--size">
+								<li class="form__input-item form__input-item--size">
+									<input class="form__input" type="radio" name="size" id="xs" value="xs">
+									<label class="form__label form__label--size" for="xs"> xs </label>
+								</li>
+								<li class="form__input-item form__input-item--size">
+									<input class="form__input" type="radio" name="size" id="s" value="s" checked>
+									<label class="form__label form__label--size" for="s"> s </label>
+								</li>
+								<li class="form__input-item form__input-item--size">
+									<input class="form__input" type="radio" name="size" id="m" value="m">
+									<label class="form__label form__label--size" for="m"> m </label>
+								</li>
+								<li class="form__input-item form__input-item--size">
+									<input class="form__input" type="radio" name="size" id="l" value="l">
+									<label class="form__label form__label--size" for="l"> l </label>
+								</li>
+								<li class="form__input-item form__input-item--size">
+									<input class="form__input" type="radio" name="size" id="xl" value="xl" disabled>
+									<label class="form__label form__label--size" for="xl"> xl </label>
+								</li>
+							</ul>
+							<a class="form__size-guide" href="#">Size guide</a>
+						</fieldset>
+						<div class="form__container">
+							<span class="title">Quantity</span>
+							<div class="form__input-wrap">
+								<button class="control-button control-button--decrease" type="button">
+									<span class="visually-hidden">Decrease</span>
+								</button>
+								<input class="form__input form__input--quantity" type="number" name="quantity" id="quantity" value="1">
+								<label class="visually-hidden" for="quantity">Number of units</label>
+								<button class="control-button control-button--increase" type="button">
+									<span class="visually-hidden">Increase</span>
+								</button>
+							</div>
+						</div>
+						<div>
+							<span class="title">Cost</span>
+							<span class="form__cost-integer">$120</span><span class="form__cost-float">.00</span>
+							<input class="form__input form__input--cost" type="hidden" value="120.00" id="cost" name="cost">
+						</div>
+					</div>
+					<div class="form__bottom">
+						<h3 class="title">Product details</h3>
+						<p class="form__details">Look out for its standout party dresses, feminine details, statement jackets and
+							cool denim including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear
+							and swimwear ranges.</p>
+						<span class="form__note">63% Viscose, 37% Polyamide.</span>
+					</div>
+					<button class="button" type="submit">Order now</button>
 				</form>
-			</section>
+				<section class="service">
+					<ul class="service__list">
+						<li class="service__item">
+							<button class="service__button service__button--increase section-heading" type="button">Delivery
+								<span class="visually-hidden">Open</span>
+							</button>
+							<p class="service__description">Delivered on or before Monday, 25 February 2019
+								Note: Subject to placing your order before specific cut-off times. Details available in checkout.
+								<span class="service__note">For free delivery – spend over <b>£18.08</b></span>
+							</p>
+						</li>
+						<li class="service__item">
+							<button class="service__button service__button--increase section-heading" type="button">Return
+								<span class="visually-hidden">Open</span>
+							</button>
+							<p class="service__description">Return through your local Boxberry store available in over 2,300
+								locations.
+								You can create your return on the carrier website by clicking the create return link.
+								Open 7 days a week, early until late.
+							</p>
+						</li>
+					</ul>
+				</section>
+				<section class="similar">
+					<h3 class="title">Similar Collections</h3>
+					<ul class="similar__list">
+						<li class="similar__item">
+							<a class="similar__link" href="#">
+								<div class="similar__text">
+									<span class="similar__heading">Kingsman style</span>
+									<span class="similar__slogan">More silk, more freedom</span>
+								</div>
+								<picture>
+									<source media="(min-width: 1360px)" srcset="images/photos/photo-4.jpg">
+									<source media="(min-width: 720px)" srcset="images/photos/photo-4-tablet.jpg">
+									<img class="similar__img" src="images/photos/photo-4.jpg" width="288" height="160"
+										alt="Kingsman style collection">
+								</picture>
+							</a>
+						</li>
+						<li class="similar__item">
+							<a class="similar__link" href="#">
+								<div class="similar__text">
+									<span class="similar__heading">Denim goddess</span>
+									<span class="similar__slogan">More denim, more freedom</span>
+								</div>
+								<picture>
+									<source media="(min-width: 1360px)" srcset="images/photos/photo-5.jpg">
+									<source media="(min-width: 720px)" srcset="images/photos/photo-5-tablet.jpg">
+									<img class="similar__img" src="images/photos/photo-5.jpg" width="288" height="160"
+										alt="Denim goddess collection">
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="subscribe">
+					<h2 class="section-heading section-heading--subscribe">Subscribe our newsletter</h2>
+					<p class="subscribe__text">Get notified about new collections
+						of&nbsp;Gussi Store</p>
+					<form class="subscribe__form" method="post" action="#">
+						<fieldset class="subscribe__fieldset">
+							<ul class="subscribe__input-list">
+								<li class="subscribe__input-item">
+									<input class="subscribe__input" type="text" name="user-name" id="user-name"
+										placeholder="Enter your name">
+									<label class="visually-hidden" for="user-name">Enter your name</label>
+								</li>
+								<li class="subscribe__input-item">
+									<input class="subscribe__input" type="text" name="user-email" id="user-email"
+										placeholder="Enter your e-mail">
+									<label class="visually-hidden" for="user-email">Enter your email</label>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset class="subscribe__fieldset subscribe__fieldset-gender">
+							<span class="subscribe__legend">Choose your gender:</span>
+							<ul class="subscribe__input-list subscribe__input-list--flex">
+								<li class="subscribe__input-item">
+									<input class="subscribe__radio" type="radio" name="gender" id="male" value="male" checked>
+									<label class="subscribe__label" for="male">Male</label>
+								</li>
+								<li class="subscribe__input-item">
+									<input class="subscribe__radio" type="radio" name="gender" id="female" value="female">
+									<label class="subscribe__label" for="female">Female</label>
+								</li>
+							</ul>
+						</fieldset>
+						<input class="subscribe__checkbox" type="checkbox" name="agreement" id="agreement" checked>
+						<label class="subscribe__checkbox-label" for="agreement">Look out for its standout party dresses,
+							feminine details</label>
+						<button class="button">Subscribe Gussi</button>
+					</form>
+				</section>
+			</div>
 		</div>
 	</main>
 	<script src="scripts/script.min.js"></script>

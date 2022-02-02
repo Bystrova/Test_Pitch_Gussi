@@ -50,10 +50,18 @@ img {
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 1176px;
+		width: 616px;
+		padding: 56px 52px 0 92px;
+
+		&--main {
+			width: 1360px;
+			display: flex;
+			padding: 0;
+		}
 
 		&--slider {
 			width: 600px;
+			padding: 0;
 		}
 	}
 }

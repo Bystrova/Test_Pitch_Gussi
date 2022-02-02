@@ -2,6 +2,10 @@
 	list-style: none;
 	margin: 0;
 	padding: 40px 0 0 0;
+
+	@media (min-width: $desktop-width) {
+		padding: 16px 0 0 0;
+	}
 }
 
 .service__item {

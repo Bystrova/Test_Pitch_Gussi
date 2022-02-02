@@ -6,6 +6,10 @@
 	border: none;
 	cursor: pointer;
 
+	@media (min-width: $desktop-width) {
+		margin-left: -5px;
+	}
+
 	&::before {
 		position: absolute;
 		content: "";
@@ -14,6 +18,11 @@
 		background-color: $basic-dark-blue;
 		top: 9px;
 		left: 3px;
+
+		@media (min-width: $desktop-width) {
+			top: 11px;
+			left: 7px;
+		}
 	}
 
 	&--increase::after {
@@ -24,5 +33,21 @@
 		background-color: $basic-dark-blue;
 		top: 5px;
 		left: 7px;
+
+		@media (min-width: $desktop-width) {
+			top: 7px;
+			left: 11px;
+		}
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 27px;
+		height: 27px;
+		border: 1px solid transparent;
+
+		&:hover {
+			border: 1px solid $basic-light-grey;
+			border-radius: 50%;
+		}
 	}
 }
