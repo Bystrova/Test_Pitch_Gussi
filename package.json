@@ -16,6 +16,7 @@
 		"del": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
+		"gulp-concat": "^2.6.1",
 		"gulp-htmlmin": "^5.0.1",
 		"gulp-libsquoosh": "^1.0.12",
 		"gulp-plumber": "^1.2.1",

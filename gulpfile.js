@@ -11,6 +11,7 @@ const csso = require('postcss-csso');
 const rename = require('gulp-rename');
 const terser = require('gulp-terser');
 const squoosh = require('gulp-libsquoosh');
+const concat = require("gulp-concat");
 
 // Styles
 
@@ -46,6 +47,7 @@ exports.html = html;
 
 const scripts = () => {
 	return gulp.src('source/scripts/*.js')
+		.pipe(concat("main.js"))
 		.pipe(terser())
 		.pipe(rename('script.min.js'))
 		.pipe(gulp.dest('build/scripts'))
@@ -53,17 +55,17 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-//Img
+//images
 
 const optimizeImages = () => {
-	return gulp.src('source/img/**/*.{png,jpg,svg}')
+	return gulp.src('source/images/**/*.{png,jpg,svg}')
 		.pipe(squoosh())
-		.pipe(gulp.dest('build/img'))
+		.pipe(gulp.dest('build/images'))
 }
 
 const copyImages = () => {
-	return gulp.src('source/img/**/*.{png,jpg,svg}')
-		.pipe(gulp.dest('build/img'))
+	return gulp.src('source/images/**/*.{png,jpg,svg}')
+		.pipe(gulp.dest('build/images'))
 }
 
 exports.copyImages = copyImages;
@@ -117,7 +119,7 @@ const reload = (done) => {
 
 const watcher = () => {
 	gulp.watch('source/sass/**/*.scss', gulp.series('styles'));
-	gulp.watch('source/scripts/script.js', gulp.series(scripts));
+	gulp.watch('source/scripts/*.js', gulp.series(scripts));
 	// gulp.watch('source/*.html').on('change', sync.reload);
 	gulp.watch('source/*.html', gulp.series(html, reload));
 }

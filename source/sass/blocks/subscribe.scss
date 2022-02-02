@@ -1,0 +1,182 @@
+.subscribe {
+	padding: 52px 0 0 0;
+
+	@media (min-width: $tablet-width) {
+		padding: 48px 0 0 0;
+	}
+}
+
+.subscribe__text {
+	font-size: 18px;
+	line-height: 28px;
+	color: $basic-grey;
+	margin: 8px 0 28px 0;
+
+	@media (min-width: $tablet-width) {
+		font-size: 20px;
+		line-height: 32px;
+		margin: 8px 0 24px 0;
+	}
+}
+
+.subscribe__fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.subscribe__fieldset-gender {
+	margin: 12px 0 16px 0;
+
+	@media (min-width: $tablet-width) {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		margin: 12px 0 40px 0;
+	}
+}
+
+.subscribe__legend {
+	margin: 0 0 5px 0;
+	font-size: 20px;
+	line-height: 32px;
+	color: $basic-grey;
+
+	@media (min-width: $tablet-width) {
+		margin: 0;
+	}
+}
+
+.subscribe__input-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&--flex {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+}
+
+.subscribe__input-item {
+	margin: 0 0 16px 0;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.subscribe__fieldset-gender .subscribe__input-item {
+	@media (min-width: $tablet-width) {
+		margin: 0;
+	}
+}
+
+.subscribe__input {
+	padding: 16px;
+	background: $basic-opacity-grey-3;
+	border-radius: 1px;
+	border: none;
+	width: 100%;
+	box-sizing: border-box;
+
+	&::placeholder {
+		font-size: 16px;
+		line-height: 40px;
+		color: $basic-grey;
+	}
+
+	@media (min-width: $tablet-width) {
+		max-width: 456px;
+	}
+}
+
+.subscribe__radio {
+	display: none;
+}
+
+.subscribe__label {
+	margin: 0 0 0 31px;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 19px;
+		height: 19px;
+		border: 1px solid $basic-light-grey;
+		border-radius: 50%;
+		top: 0;
+		left: -30px;
+	}
+}
+
+.subscribe__radio:checked+.subscribe__label {
+	&::after {
+		position: absolute;
+		content: "";
+		width: 13px;
+		height: 13px;
+		background: $basic-dark-blue;
+		border-radius: 50%;
+		top: 4px;
+		left: -26px;
+	}
+}
+
+.subscribe__checkbox {
+	display: none;
+}
+
+.subscribe__checkbox-label {
+	margin: 0 0 16px 31px;
+	position: relative;
+	display: block;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 19px;
+		height: 19px;
+		border: 1px solid $basic-light-grey;
+		border-radius: 1px;
+		top: 0;
+		left: -30px;
+	}
+
+	&:hover::before {
+		border: 1px solid $basic-dark-blue;
+	}
+
+	&:hover::after {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 5px;
+		border-left: 1px solid $basic-light-grey;
+		border-bottom: 1px solid $basic-light-grey;
+		transform: rotate(-45deg);
+		top: 5px;
+		left: -25px;
+	}
+}
+
+.subscribe__checkbox:checked+.subscribe__checkbox-label {
+	&::before {
+		background: $basic-dark-blue;
+		border-color: $basic-dark-blue;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 5px;
+		border-left: 1px solid $basic-white;
+		border-bottom: 1px solid $basic-white;
+		transform: rotate(-45deg);
+		top: 5px;
+		left: -25px;
+	}
+}

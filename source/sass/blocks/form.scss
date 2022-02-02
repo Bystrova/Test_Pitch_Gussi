@@ -1,0 +1,267 @@
+.form {
+	padding: 8px 0 0 0;
+}
+
+.form__top {
+	color: $basic-grey;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 0 0 16px 0;
+	border-bottom: 1px solid $basic-light-grey;
+
+	@media (min-width: $tablet-width) {
+		padding: 0 0 4px 0;
+	}
+}
+
+.form__heading {
+	color: $basic-dark-blue;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 32px;
+	margin: 16px 0;
+
+	@media (min-width: $tablet-width) {
+		font-size: 48px;
+		line-height: 56px;
+	}
+}
+
+.form__description {
+	margin: 0;
+
+	@media (min-width: $tablet-width) {
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
+
+.form__wrap {
+	padding: 16px 0;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid $basic-light-grey;
+
+	@media (min-width: $tablet-width) {
+		column-gap: 72px;
+		padding: 24px 0;
+	}
+}
+
+.form__fieldset {
+	border: none;
+	margin: 0 0 24px 0;
+	padding: 0;
+
+	&--size {
+		margin: 0 0 32px 0;
+	}
+
+	@media (min-width: $tablet-width) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 36px 0;
+	}
+}
+
+.form__input-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 8px 0 0 0;
+
+	&--size {
+		margin: 0 0 26px -13px;
+
+		@media (min-width: $tablet-width) {
+			margin: 0 0 0 -13px;
+			padding: 0;
+
+		}
+	}
+
+	@media (min-width: $tablet-width) {
+		// align-items: flex-start;
+	}
+}
+
+.form__input-item:not(:last-child) {
+	margin-right: 4px;
+}
+
+.form__input {
+	display: none;
+
+	&--quantity {
+		display: block;
+		font-size: 24px;
+		line-height: 24px;
+		color: $basic-grey;
+		max-width: 30px;
+		border: none;
+		text-align: center;
+		-moz-appearance: textfield;
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+
+	&--cost {
+		display: block;
+		font-size: 40px;
+		line-height: 40px;
+		color: $basic-beige;
+		max-width: 100px;
+		padding-left: 20px;
+		border: none;
+		position: relative;
+	}
+}
+
+.form__label {
+	&--color {
+		position: relative;
+		width: 48px;
+		height: 48px;
+		display: block;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: $basic-dark-blue;
+			top: 4px;
+			left: 4px;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			border: 1px solid transparent;
+			top: 0;
+			left: 0;
+		}
+
+		&:hover::after {
+			border-color: $basic-grey;
+		}
+	}
+
+	&--grey::before {
+		background-color: $basic-grey;
+	}
+
+	&--blue::before {
+		background-color: $basic-blue;
+	}
+
+	&--size {
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 24px;
+		color: $basic-grey;
+		border: 1px solid transparent;
+		border-radius: 50%;
+		width: 48px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			border-color: $basic-grey;
+		}
+	}
+}
+
+.form__input:checked+.form__label {
+	&--color {
+		&::after {
+			border-color: $basic-dark-blue;
+		}
+	}
+
+	&--size {
+		font-size: 28px;
+		color: $basic-dark-blue;
+		border: 1px solid $basic-dark-blue;
+	}
+}
+
+.form__input:disabled+.form__label {
+	&--size {
+		opacity: 0.5;
+		color: $basic-light-grey;
+		border-color: transparent;
+	}
+}
+
+.form__size-guide {
+	text-decoration: none;
+	color: $basic-beige;
+	border: 1px solid $basic-beige;
+	border-radius: 24px;
+	padding: 2px 12px;
+
+	@media (min-width: $tablet-width) {
+		align-self: center;
+		margin: 5px 0 0 25px
+	}
+}
+
+.form__container {
+	margin-right: 74px;
+
+	@media (min-width: $tablet-width) {
+		margin-right: 68px;
+	}
+}
+
+.form__input-wrap {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	margin: 14px 0 0 0;
+}
+
+.form__cost-integer {
+	font-size: 40px;
+	line-height: 40px;
+	color: $basic-beige;
+	margin: 10px 0 0 0;
+	display: inline-block;
+}
+
+.form__cost-float {
+	font-size: 24px;
+	line-height: 24px;
+	color: $basic-grey;
+	margin: 10px 0 0 0;
+	display: inline-block;
+}
+
+.form__bottom {
+	padding: 28px 0 40px 0;
+}
+
+.form__details {
+	padding: 0;
+	margin: 8px 0;
+}
+
+.form__note {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 20px;
+	color: $basic-grey;
+}

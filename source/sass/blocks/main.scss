@@ -1,0 +1,11 @@
+.main {
+	padding: 0 0 16px 0;
+
+	@media (min-width: $tablet-width) {
+		padding: 0 0 29px 0;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 0;
+	}
+}
