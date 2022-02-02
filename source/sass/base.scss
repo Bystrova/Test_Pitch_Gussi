@@ -31,6 +31,15 @@ img {
 	overflow: hidden;
 }
 
+.center-wrap {
+	@media (min-width: $desktop-width) {
+		width: 1360px;
+		display: flex;
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+
 .center {
 	width: 288px;
 	margin: 0 auto;
@@ -52,12 +61,6 @@ img {
 	@media (min-width: $desktop-width) {
 		width: 616px;
 		padding: 56px 52px 0 92px;
-
-		&--main {
-			width: 1360px;
-			display: flex;
-			padding: 0;
-		}
 
 		&--slider {
 			width: 600px;
