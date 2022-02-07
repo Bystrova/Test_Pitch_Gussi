@@ -11,7 +11,7 @@
 
 <body>
 	<main class="main">
-		<div class="center center--main">
+		<div class="center-wrap">
 			<div class="center center--slider">
 				<section class="slider">
 					<a class="main-logo main-logo--slider" href="#">
@@ -85,19 +85,20 @@
 							<legend class="title">Colour</legend>
 							<ul class="form__input-list">
 								<li class="form__input-item">
-									<input class="form__input" type="radio" name="color" id="dark-blue" value="dark-blue" checked>
+									<input class="form__input visually-hidden" type="radio" name="color" id="dark-blue" value="dark-blue"
+										checked>
 									<label class="form__label form__label--color" for="dark-blue">
 										<span class="visually-hidden">Dark-blue color</span>
 									</label>
 								</li>
 								<li class="form__input-item">
-									<input class="form__input" type="radio" name="color" id="grey" value="grey">
+									<input class="form__input visually-hidden" type="radio" name="color" id="grey" value="grey">
 									<label class="form__label form__label--grey form__label--color" for="grey">
 										<span class="visually-hidden">Grey color</span>
 									</label>
 								</li>
 								<li class="form__input-item">
-									<input class="form__input" type="radio" name="color" id="blue" value="blue">
+									<input class="form__input visually-hidden" type="radio" name="color" id="blue" value="blue">
 									<label class="form__label form__label--blue form__label--color" for="blue">
 										<span class="visually-hidden">Blue color</span>
 									</label>
@@ -108,23 +109,23 @@
 							<legend class="title">Size</legend>
 							<ul class="form__input-list form__input-list--size">
 								<li class="form__input-item form__input-item--size">
-									<input class="form__input" type="radio" name="size" id="xs" value="xs">
+									<input class="form__input visually-hidden" type="radio" name="size" id="xs" value="xs">
 									<label class="form__label form__label--size" for="xs"> xs </label>
 								</li>
 								<li class="form__input-item form__input-item--size">
-									<input class="form__input" type="radio" name="size" id="s" value="s" checked>
+									<input class="form__input visually-hidden" type="radio" name="size" id="s" value="s" checked>
 									<label class="form__label form__label--size" for="s"> s </label>
 								</li>
 								<li class="form__input-item form__input-item--size">
-									<input class="form__input" type="radio" name="size" id="m" value="m">
+									<input class="form__input visually-hidden" type="radio" name="size" id="m" value="m">
 									<label class="form__label form__label--size" for="m"> m </label>
 								</li>
 								<li class="form__input-item form__input-item--size">
-									<input class="form__input" type="radio" name="size" id="l" value="l">
+									<input class="form__input visually-hidden" type="radio" name="size" id="l" value="l">
 									<label class="form__label form__label--size" for="l"> l </label>
 								</li>
 								<li class="form__input-item form__input-item--size">
-									<input class="form__input" type="radio" name="size" id="xl" value="xl" disabled>
+									<input class="form__input visually-hidden" type="radio" name="size" id="xl" value="xl" disabled>
 									<label class="form__label form__label--size" for="xl"> xl </label>
 								</li>
 							</ul>
@@ -146,7 +147,7 @@
 						<div>
 							<span class="title">Cost</span>
 							<span class="form__cost-integer">$120</span><span class="form__cost-float">.00</span>
-							<input class="form__input form__input--cost" type="hidden" value="120.00" id="cost" name="cost">
+							<input class="form__input form__input--hidden" type="hidden" value="120.00" id="cost" name="cost">
 						</div>
 					</div>
 					<div class="form__bottom">
